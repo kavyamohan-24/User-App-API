@@ -3,6 +3,7 @@ import './App.css';
 import AddUsers from './components/AddUsers';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SearchUsers from './components/SearchUsers';
+import ViewAll from './components/Viewall';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
     <Routes>
       <Route path="/" element={<AddUsers/>}/>
       <Route path="/search" element={<SearchUsers/>}/>
+      <Route path="/viewall" element={<ViewAll/>}/>
     </Routes>
     </BrowserRouter>
   );
